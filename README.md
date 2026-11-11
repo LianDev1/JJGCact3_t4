@@ -55,6 +55,16 @@ Tablas en MySQL Workbench, con la llave foránea `autor_id` en la tabla `libro`:
 ![Workbench tablas](Capturas/08-workbench-tablas.png)
 ![Workbench relación](Capturas/09-workbench-tablas.png)
 
+## Despliegue en VPS
+
+El proyecto está corriendo en el VPS, en el puerto 8084, conectado a la base de datos `biblioteca_db`:
+
+**http://148.113.144.30:8084/api/libros**
+
+En la captura se ve el puerto 8084 escuchando y la respuesta de la API con el libro y el nombre de su autor:
+
+![VPS funcionando](Capturas/10-vps-funcionando.png)
+
 ## Cómo ejecutar
 
 1. Crear la base de datos: `CREATE DATABASE biblioteca_db;`
@@ -65,4 +75,4 @@ $env:DB_PASSWORD="tu_contraseña"
 .\mvnw spring-boot:run
 ```
 
-La app corre en `http://localhost:8083`.
+La app corre en `http://localhost:8084`.
